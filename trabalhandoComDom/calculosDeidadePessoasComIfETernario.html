@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie um algoritmo que calcule a idade de uma pessoa em:</title>
+</head>
+<body>
+
+    <h1>Criei um algoritmo que calcule a idade de uma pessoa em:
+        Meses, Dias, Horas e minutos
+    </h1>
+    <script>
+
+        // Atividade Crie um algoritmo que calcule a idade de uma pessoa em MESES - DIAS - HORAS - MINUTOS
+
+        // Criar as variáveis
+        let anoAtual = 2023;
+        let idadePessoa;
+        let idadeMeses;
+        let idadeDias;
+        let idadeHoras;
+        let idadeMinutos;
+
+        // Entradas
+        const nomePessoa = prompt("Informe o seu priemeiro nome:");
+        const anoNascimentoPessoa = prompt("Digite o ano do seu nascimento:");
+
+        // Processamento
+        idadePessoa = anoAtual - anoNascimentoPessoa;
+        idadeMeses = idadePessoa * 12; // 12 meses tem um ano
+        idadeDias = idadePessoa * 365;   // 365 dias tem um ano
+        idadeHoras = idadePessoa * 8766;  // Quantas horas tem em um ano
+        idadeMinutos = idadePessoa * 525960; // Quantos minutos tem em um ano
+
+       
+
+        // DECISÕES (IF - ELSE)
+
+        // Utilizando IF Composto
+        // if (idadePessoa <= 0 || idadePessoa >= 100) {
+        //     alert("A idade não pode ser menor ou igual a zero");
+            
+        // }
+        // else {
+
+        //      // Saida
+        // alert(`Seu nome é: ${nomePessoa} - Sua idade em meses: ${idadeMeses} - Sua idade em dias: ${idadeDias} - Sua idade em horas: ${idadeHoras} - Sua idade em minutos: ${idadeMinutos}`);
+        // }
+
+
+
+        // *********************************************************************************************************************************************************************
+        // Utilizando a condição ternaria tudo em uma linha
+
+        idadePessoa <= 0 || idadePessoa >= 100 ? alert("A idade não pode ser menor ou igual a zero") : alert(`Seu nome é: ${nomePessoa} 
+        - Sua idade em meses: ${idadeMeses} 
+        - Sua idade em dias: ${idadeDias} 
+        - Sua idade em horas: ${idadeHoras} 
+        - Sua idade em minutos: ${idadeMinutos}`)
+    </script>
+    
+    
+</body>
+</html>

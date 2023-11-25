@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+</head>
+
+<body>
+    <script>
+        // Switch Case
+        // Adega de bebidas
+        // Menu personalizado
+        alert(`
+        Bem vindo a minha adega, escolha uma opção abaixo:
+        1 - Coca -Cola
+        2 - Fanta - Uva
+        3 - Cachaça
+        4 - Cantinho
+        5 - Cerveja
+        6 - Corote
+
+        `)
+
+        // Entrada de dados
+
+        const opcaoUsuario = Number(prompt("Qual opção de bebida você deseja comprar"));
+
+        // Processamento
+
+        switch (opcaoUsuario) {
+            case 1:
+                // Saida de dados
+                alert("A opção que o usuário informou é Coca - Cola")
+
+                let respostaUser = prompt("Você deseja acrescentar gelo e limão ?")
+
+                // If Ternario
+                respostaUser == "sim" || respostaUser == "SIM" ? alert("A sua bebida tera gelo e limão") : alert("Ok, sem gelo e limão")
+
+
+
+
+
+                break;
+            case 2:
+                // Saida de dados
+                alert("A opção que o usuário informou é Fanta - Uva")
+
+                let respostaUser2 = prompt("Você deseja acrescentar gelo e limão ?")
+
+                // If Ternario
+                respostaUser2 == "sim" || respostaUser2 == "SIM" ? alert("A sua bebida tera gelo e limão") : alert("Ok, sem gelo e limão")
+
+
+
+                break;
+            case 3:
+                // Saida de dados
+                alert("A opção que o usuário informou é Cachaça")
+
+                let respostaUser3 = prompt("Você deseja acrescentar limão ?")
+
+                // If Ternario
+                respostaUser3 == "sim" || respostaUser3 == "SIM" ? alert("A sua bebida tera limão") : alert("Ok, sem limão")
+
+                break;
+            case 4:
+                // Saida de dados
+                alert("A opção que o usuário informou é Cantinho")
+
+                let respostaUser4 = prompt("Você deseja acrescentar limão ?")
+
+                // If Ternario
+                respostaUser4 == "sim" || respostaUser4 == "SIM" ? alert("A sua bebida tera limão") : alert("Ok, sem limão")
+
+                break;
+            case 5:
+                // Saida de dados
+                alert("A opção que o usuário informou é Cerveja")
+
+                let respostaUser5 = prompt("Você deseja bem gelada ?")
+
+                // If Ternario
+                respostaUser5 == "sim" || respostaUser5 == "SIM" ? alert("A sua bebida será bem gelada") : alert("Ok, no ponto certo")
+
+                break;
+            case 6:
+                // Saida de dados
+                alert("A opção que o usuário informou é Corote")
+
+                let respostaUser6 = prompt("Você deseja gelo ?")
+
+                // If Ternario
+                respostaUser6 == "sim" || respostaUser6 == "SIM" ? alert("A sua bebida tera gelo") : alert("Ok, sem gelo")
+
+                break;
+
+            default:
+                // Saida de dados
+                alert("Opção invalida")
+                break;
+        }
+    </script>
+</body>
+
+</html>

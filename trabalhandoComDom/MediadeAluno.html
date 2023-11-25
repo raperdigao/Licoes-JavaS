@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular média dos alunos</title>
+</head>
+<body>
+    <h1>
+        <!-- Crie um algoritmo para calcular a média de um aluno. Considere que o aluno possui 4 notas. 
+        Obs: A média do aluno deve ser maior do que 6.
+
+        Se a média for = 0 será reprovado
+        Se a média for <= 5 Recuperação
+        Se a média for >= 6 Aprovado -->
+    </h1>
+
+    <script>
+        // Variaveis
+        let mediaNotas;
+        
+
+        // Entradas
+        const nomeAluno = prompt("Informe o nome do Aluno:");
+        const primeiraNota = parseInt(prompt("Informe a primeira nota"));
+        const segundaNota = parseInt(prompt("Informe a segunda notas"));
+        const terceiraNota = parseInt(prompt("Informe a terceira nota"));
+        const quartaNota = parseInt(prompt("Informe a quarta nota"));
+
+
+        
+
+        // Processamento
+       mediaNotas = (primeiraNota + segundaNota + terceiraNota + quartaNota) / 4;
+        
+
+
+        // Saidas
+        if (mediaNotas == 0) {
+            alert(`O aluno: ${nomeAluno} - Sua média é: ${mediaNotas} - Resultado: Está Reprovado`);
+            
+        }
+        else if (mediaNotas <= 5 ) {
+            alert(`O aluno: ${nomeAluno} - Sua média é: ${mediaNotas} - Resultado: Está de Recuperação`);
+
+        }
+        else if (mediaNotas >= 6) {
+            alert(`O aluno: ${nomeAluno} - Sua média é: ${mediaNotas} - Resultado: Esta Aprovado`);
+
+        }
+
+
+    </script>
+</body>
+</html>
