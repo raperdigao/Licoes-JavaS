@@ -13,6 +13,7 @@
         // Switch Case
         // Adega de bebidas
         // Menu personalizado
+        // Estas opçoes são literal templates - Função do java script para pular linhas, da para colocar funçoes.
         alert(`
         Bem vindo a minha adega, escolha uma opção abaixo:
         1 - Coca -Cola
@@ -30,15 +31,17 @@
 
         // Processamento
 
+        let respostaUser;
+
         switch (opcaoUsuario) {
             case 1:
                 // Saida de dados
                 alert("A opção que o usuário informou é Coca - Cola")
 
-                var respostaUser = prompt("Você deseja acrescentar gelo e limão ?")
+                respostaUser = prompt("Você deseja acrescentar gelo e limão ? Sim ou Não").toLowerCase();
 
-                // If Ternario
-                respostaUser == "sim" || respostaUser == "SIM" ? alert("A sua bebida tera gelo e limão") : alert("Ok, sem gelo e limão")
+                // If Ternario                                             Se for verdadeiro                        Se for falso
+                respostaUser == "sim" ? alert("A sua bebida tera gelo e limão") : alert("Ok, sem gelo e limão")
 
 
 
@@ -49,10 +52,10 @@
                 // Saida de dados
                 alert("A opção que o usuário informou é Fanta - Uva")
 
-                var respostaUser = prompt("Você deseja acrescentar gelo e limão ?")
+                respostaUser = prompt("Você deseja acrescentar gelo e limão ?").toLowerCase();
 
-                // If Ternario
-                respostaUser == "sim" || respostaUser == "SIM" ? alert("A sua bebida tera gelo e limão") : alert("Ok, sem gelo e limão")
+                // If Ternario                                             Se for verdadeiro                        Se for falso
+                respostaUser == "sim" ? alert("A sua bebida tera gelo e limão") : alert("Ok, sem gelo e limão")
 
 
 
@@ -61,40 +64,40 @@
                 // Saida de dados
                 alert("A opção que o usuário informou é Cachaça")
 
-                var respostaUser = prompt("Você deseja acrescentar limão ?")
+                respostaUser = prompt("Você deseja acrescentar limão ?").toLowerCase();
 
                 // If Ternario
-                respostaUser == "sim" || respostaUser == "SIM" ? alert("A sua bebida tera limão") : alert("Ok, sem limão")
+                respostaUser == "sim" ? alert("A sua bebida tera limão") : alert("Ok, sem limão")
 
                 break;
             case 4:
                 // Saida de dados
                 alert("A opção que o usuário informou é Cantinho")
 
-                var respostaUser = prompt("Você deseja acrescentar limão ?")
+                respostaUser = prompt("Você deseja acrescentar limão ?").toLowerCase();
 
                 // If Ternario
-                respostaUser == "sim" || respostaUser == "SIM" ? alert("A sua bebida tera limão") : alert("Ok, sem limão")
+                respostaUser == "sim" ? alert("A sua bebida tera limão") : alert("Ok, sem limão")
 
                 break;
             case 5:
                 // Saida de dados
                 alert("A opção que o usuário informou é Cerveja")
 
-                var respostaUser = prompt("Você deseja bem gelada ?")
+                respostaUser = prompt("Você deseja bem gelada ?").toLowerCase();
 
                 // If Ternario
-                respostaUser == "sim" || respostaUser == "SIM" ? alert("A sua bebida será bem gelada") : alert("Ok, no ponto certo")
+                respostaUser == "sim" ? alert("A sua bebida será bem gelada") : alert("Ok, no ponto certo")
 
                 break;
             case 6:
                 // Saida de dados
                 alert("A opção que o usuário informou é Corote")
 
-                var respostaUser = prompt("Você deseja gelo ?")
+                respostaUser = prompt("Você deseja gelo ?").toLowerCase();
 
                 // If Ternario
-                respostaUser == "sim" || respostaUser == "SIM" ? alert("A sua bebida tera gelo") : alert("Ok, sem gelo")
+                respostaUser == "sim" ? alert("A sua bebida tera gelo") : alert("Ok, sem gelo")
 
                 break;
 

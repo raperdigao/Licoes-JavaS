@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Java Script</title>
+</head>
+
+<body>
+    <script>
+
+        // Crie uma calculadora que irá capturar qual operação aritmética o usuário deseja fazer, utilizando switch case:
+        alert(`
+        Bem vindo, a calculadora do Raphael Perdigão, Digite a opção aritmética desejada:
+        [ 1 ]  -   Opção Adição
+        [ 2 ]  -   Opção Subtração
+        [ 3 ]  -   Opção Multiplicação
+        [ 4 ]  -   Opção Divisão
+        `)
+
+        // Entrada de dados
+
+        const opcaoAritmetica = Number(prompt("Digite a opção de um operador artimético:"));
+        if (opcaoAritmetica > 4) {
+            alert("Opção inválida");
+
+            // Finaliza o processo
+            process.exit();
+
+
+        }
+
+        const num1 = parseInt(prompt("Digite o primeiro número:"));
+        const num2 = parseInt(prompt("Digite o segundo número:"));
+        let total;
+
+        // Processamento
+
+        switch (opcaoAritmetica) {
+            case 1:
+
+                // Processamento
+                total = num1 + num2;
+
+                // Saída de dados - Opção de Adição 
+                alert(`O usuário selecionou a opção:  ${opcaoAritmetica},  O primeiro número é:  ${num1},  O segundo número é:  ${num2},  O resultado total é:  ${total}`)
+                alert(`Obrigado por utilizar a minha calculadora.`)
+
+
+
+                break;
+
+            case 2:
+
+                // Processamento
+                total = num1 - num2;
+
+                // Saida de dados - Opção Subtração
+                alert(`O usuário selecionou a opção:  ${opcaoAritmetica},  O primeiro número é:  ${num1},  O segundo número é:  ${num2},  O resultado total é:  ${total}`)
+                alert(`Obrigado por utilizar a minha calculadora.`)
+
+                break;
+
+            case 3:
+
+                // Processamento
+                total = num1 * num2;
+
+                // Saída de dados - Opção Multiplicação
+                alert(`O usuário selecionou a opção:  ${opcaoAritmetica},  O primeiro número é:  ${num1},  O segundo número é:  ${num2},  O resultado total é:  ${total}`)
+                alert(`Obrigado por utilizar a minha calculadora`)
+
+                break;
+
+            case 4:
+
+                // Processamento 
+                total = num1 / num2;
+
+                // Condição para se usuário, tentar dividir algum número por zero da informção: alert(`Não é possível dividir por zero`)
+                if (total == "Infinity") {
+                    alert(`Não é possível dividir por zero`)
+                    // Finalizar o processo
+                    process.exit();
+
+                }
+
+
+                // OU ESTA OPÇÂO Condição TERNÁRIO para se usuário, tentar dividir algum número por zero da informção: alert(`Não é possível dividir por zero`)
+                //       
+                //    total == 0 ? alert(`Não é possível dividir por zero`) :  alert(`O usuário selecionou a opção   ${opcaoAritmetica},  O primeiro número é:  ${num1},  O segundo número é:  ${num2},  O resultado total é:  ${total}`)
+                //    alert(`Obrigado por utilizar a minha calculadora`)
+                //     
+                //    
+
+                // 
+
+                
+
+                // Saída de dados - Opção Divisão
+                alert(`O usuário selecionou a opção   ${opcaoAritmetica},  O primeiro número é:  ${num1},  O segundo número é:  ${num2},  O resultado total é:  ${total}`)
+                alert(`Obrigado por utilizar a minha calculadora`)
+
+                break;
+
+            default:
+                // Caso usuário digitar uma opção errada
+                alert("Opção Inválida!!");
+
+
+                break;
+        }
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

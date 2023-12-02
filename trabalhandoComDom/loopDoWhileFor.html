@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOP FOR DO WHILE</title>
+
+</head>
+<body>
+    <script>
+        //      Variavel Inicio | Condição | Incremento        
+        // for (let passo = 0;    passo < 5; passo++) {
+        //     console.log("Olá");
+    
+        // }
+
+    //   SISTEMA DE COMPRIMENTO DE SENHA COM UM CONTATOR DE 3 TENTATIVAS
+        // Entrada  de dados
+        let senhaDigitada = prompt("Informe a senha até 6 caracteres: ");
+        let contador = 0;
+
+        // Processamento de dados
+        while (senhaDigitada.length !== 6 && contador < 3) { 
+
+            // Saída de dados
+            alert(` A senha informada não atende aos requisitos. Informe uma senha de 1 até 6`)
+            senhaDigitada = prompt(`Informe a senha novamente`)
+
+            // Vai contar até 3 tentativas
+            contador++
+            
+        
+            
+        }
+
+        // Saída de dados
+        alert("Entrando no sistema.....")
+
+
+       
+
+    </script>
+
+    
+</body>
+</html>
